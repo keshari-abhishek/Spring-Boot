@@ -1,7 +1,0 @@
-INDEX VERSION 1.134
-E:\L\Spring Boot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\261548748.index
-\practice\src\main\resources
-E:\L\Spring Boot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2321939009.index
-\practice\src\main\java
-E:\L\Spring Boot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2365137800.index
-\tutorial\src\main\java
