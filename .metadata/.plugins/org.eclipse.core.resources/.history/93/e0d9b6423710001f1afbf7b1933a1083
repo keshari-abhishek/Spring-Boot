@@ -1,0 +1,13 @@
+package com.abhi.springbootreference;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBootReferenceApplication {
+
+	public static void main(String[] args) {
+		System.exit(SpringApplication.exit(SpringApplication.run(SpringBootReferenceApplication.class, args)));
+	}
+
+}

@@ -1,0 +1,35 @@
+=============================================================================================
+  .   ____          _            __ _ _                 =           AAAAAAAAAAAAAAAAAAAAAAAAA
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \               ===          AAAAAAAAAAAAAAAAAAAAAAAAA
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \             =====         AAAAAAAAAAAAAAAAAAAAAAAAA
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )           =======        AAAAA               AAAAA
+  '  |____| .__|_| |_|_| |_\__, | / / / /           =========       AAAAA               AAAAA
+ =========|_|==============|___/=/_/_/_/           ===========      AAAAA               AAAAA
+=========================================         =============     AAAAA               AAAAA
+==========================================       ===============    AAAAA               AAAAA
+==..=======================================     =================   AAAAA               AAAAA
+= /\\ / ___ \  \ \ \ \	====================   ===================  AAAAA               AAAAA
+=( ( )| |__|_| | \ \ \ \ ==================== ===================== AAAAAAAAAAAAAAAAAAAAAAAAA
+= \\/ |_ __  | | ) ) ) ) ===========================================AAAAAAAAAAAAAAAAAAAAAAAAA
+=  '  | |  | | |/ / / /	===================== ===================== AAAAAAAAAAAAAAAAAAAAAAAAA
+===========|_|==============================   ===================  AAAAA               AAAAA
+===========================================     =================   AAAAA               AAAAA
+==========================================       ===============    AAAAA               AAAAA
+=========================================         =============     AAAAA               AAAAA
+========================================           ===========      AAAAA               AAAAA
+=======================================             =========       AAAAA               AAAAA
+======================================               =======        AAAAA               AAAAA
+=====================================                 =====         AAAAA               AAAAA
+====================================                   ===          AAAAA               AAAAA
+===================================                     =           AAAAA               AAAAA
+=============================================================================================
+=1: Application Version: ${application.version}
+=2: Application Formatted Version: ${application.formatted-version}
+=3: Spring Boot Version: ${spring-boot.version}
+=4: Spring-Boot Formatted Version:  ${spring-boot.formatted-version}
+=5: ANSI Name: ${Ansi.NAME}
+=6: ANSI Color Name: ${AnsiColor.NAME}
+=7: ANSI Background Name: ${AnsiBackground.NAME}
+=8: ANSI Style Name: ${AnsiStyle.NAME}
+=9: Application Title: ${spring.application.name}
+

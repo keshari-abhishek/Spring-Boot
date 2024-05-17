@@ -1,0 +1,5 @@
+package com.abhi.springbootreference.runner;
+
+public class MyCommandLineRunner {
+
+}

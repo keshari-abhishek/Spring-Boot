@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.abhi.mybatis.repository.AppUserRepository">
+    <resultMap type="appUser" id="result">
+        <id property="id" column="id" />
+        <result property="firstName" column="first_name" />
+        <result property="lastName" column="last_name" />
+        <result property="email" column="email_id" />
+    </resultMap>
+
+    <select id="queryFindAllUsers" resultType="appUser" resultMap="result">
+        SELECT * FROM app_users
+    </select>
+
+    <insert id="queryInsertUser" parameterType="appUser"
+            keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO app_users(first_name, last_name, email_id)
+        VALUES(#{firstName}, #{lastName}, #{email})
+    </insert>
+
+    <update id="queryUpdateUser" parameterType="appUser">
+        UPDATE app_users SET first_name = #{firstName},
+        email_id = #{email}, last_name = #{lastName}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="queryDeleteUserById" parameterType="int">
+        DELETE FROM app_users WHERE id = #{id}
+    </delete>
+
+    <select id="queryFindUserById" parameterType="int"
+            resultType="appUser" resultMap="result">
+        SELECT * FROM app_users WHERE id = #{id}
+    </select>
+</mapper>

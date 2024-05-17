@@ -1,0 +1,14 @@
+package com.abhi.springbootreference.runner;
+
+import org.springframework.boot.CommandLineRunner;
+
+public class MyCommandLineRunner implements CommandLineRunner{
+
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println("This is CommandLineRunner");
+		System.out.println("This Will Execute before Application Context");
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS app_users(
+	id SERIAL PRIMARY KEY,
+	first_name VARCHAR(255) NOT NULL,
+	last_name VARCHAR(255) NOT NULL,
+	email_id VARCHAR(255) NOT NULL
+);
