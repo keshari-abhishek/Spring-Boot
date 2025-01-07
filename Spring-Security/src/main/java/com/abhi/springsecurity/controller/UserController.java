@@ -1,26 +1,44 @@
 package com.abhi.springsecurity.controller;
 
-import com.abhi.springsecurity.model.User;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.abhi.springsecurity.model.User;
+
+import jakarta.servlet.http.HttpServletRequest;
+
 @RestController
-@RequestMapping("/auth")
 public class UserController {
 	
-	@GetMapping("/welcome")
+	private  List<User> users= new ArrayList<>(List.of(new User(1,"Abhishek"),new User(2,"Raj")));
+	
+	@GetMapping("/hello")
 	public String welcome(){
-		return "This is not secure API";
+		return "Wellcome to String Security";
 	}
 	
-	@GetMapping("/all")
+	@GetMapping("/users")
 	public List<User> getAllUsers(){
-		return Arrays.asList(new User(1,"Abhishek"),new User(2,"Raj"));
+		return users;
+	}
+	
+	@PostMapping("/add-user")
+	public List<User> addUser(@RequestBody User user){
+		 users.add(user);
+		 return users;
+	}
+	
+	@GetMapping("/csrf-token")
+	public CsrfToken getToken(HttpServletRequest request) {
+		return  (CsrfToken) request.getAttribute("_csrf");
 	}
 
 }
